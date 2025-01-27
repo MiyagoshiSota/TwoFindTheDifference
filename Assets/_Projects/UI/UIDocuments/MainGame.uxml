@@ -1,0 +1,10 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Projects/UI/USS/MainGame.uss?fileID=7433441132597879392&amp;guid=6eb8f505439584707a978a316f71ee99&amp;type=3#MainGame" />
+    <engine:VisualElement style="flex-grow: 1;">
+        <engine:VisualElement name="SkilsWrapper" style="flex-grow: 1;" />
+        <engine:VisualElement name="ItemsWrapper">
+            <engine:Button name="ItemsUpButton" style="width: 40px; height: 40px; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+            <UI.ItemsWrapperView items="project://database/Assets/_Projects/Scripts/LogicAndModel/Items.asset?fileID=11400000&amp;guid=3e6499f79f40149db91cf083516f7e70&amp;type=2#Items" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

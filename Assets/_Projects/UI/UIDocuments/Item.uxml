@@ -1,0 +1,7 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement style="flex-grow: 1; overflow: visible;">
+        <engine:VisualElement name="img" style="background-image: url(&quot;project://database/Assets/_Projects/UI/TinyRanch_Assets/TinyFarm_Characters.png?fileID=256181990&amp;guid=da95bd6d9a52d4aeaa175f4068c6ab89&amp;type=3#TinyFarm_Characters_5&quot;); height: 120px; width: 120px; flex-direction: row-reverse;" />
+        <engine:Label text="牧場主" name="name" style="-unity-text-align: middle-center; font-size: 16px; white-space: pre; text-overflow: clip; height: 8px; width: 115px; -unity-font-style: bold; margin-top: 10px; margin-bottom: 10px; color: rgb(255, 255, 255);" />
+        <engine:Label text="Label" name="position" style="display: none;" />
+    </engine:VisualElement>
+</engine:UXML>

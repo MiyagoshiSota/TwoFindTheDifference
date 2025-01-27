@@ -1,0 +1,23 @@
+.item {
+    width: auto;
+    height: auto;
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+    border-left-color: rgba(255, 255, 255, 0);
+    border-right-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.itemSelected {
+    translate: 0 -40px;
+}
+
+#Wrapper > #ScrollView > #unity-content-and-vertical-scroll-container > #unity-content-viewport {
+    overflow: visible;
+}

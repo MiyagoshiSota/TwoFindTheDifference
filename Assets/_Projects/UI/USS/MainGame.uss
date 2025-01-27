@@ -1,0 +1,11 @@
+.ItemsUp {
+    transition-duration: 0.5s;
+    transition-property: translate;
+    translate: var(--0);
+}
+
+.ItemsDown {
+    transition-property: translate;
+    transition-duration: 0.5s;
+    translate: 0 230px;
+}
