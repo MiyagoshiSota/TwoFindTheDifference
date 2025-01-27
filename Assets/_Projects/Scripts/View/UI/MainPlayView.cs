@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using SingularityGroup.HotReload;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
@@ -12,6 +13,8 @@ namespace UI{
         private Button _itemsUpButton;
         private ScrollView _scrollView;
         private MainPlayViewModel _viewModel;
+        
+        public MainPlayViewModel ViewModel => _viewModel;
 
         private void Start()
         {
@@ -32,20 +35,15 @@ namespace UI{
 
         private void BindItems()
         {
-            _scrollView.contentContainer.Clear();
             var items = _viewModel.Items;
 
             for (var i = 0; i < items.Count; i++)
             {
-                var item = new Label(items[i].ItemName);
+                var item = items[i].ItemView;
                 var index = i;
 
                 // 選択可能にする
                 item.AddManipulator(new Clickable(() => { _viewModel.SelectItem(index); }));
-                
-                // 
-                if (items[i].IsSelected) {item.AddToClassList("itemSelected");}
-                else { item.RemoveFromClassList("itemSelected"); }
 
                 _scrollView.contentContainer.Add(item);
             }

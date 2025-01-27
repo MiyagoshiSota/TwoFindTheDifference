@@ -4,13 +4,13 @@ using UnityEngine;
 public class SerchItem : MonoBehaviour
 {
     private Camera _mainCamera;
-    private MainPlayViewModel _mainPlayViewModel;
+    [SerializeField] private MainPlayView viewModel;
+    private ItemView _itemView;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _mainCamera = Camera.main;
-        _mainPlayViewModel = new MainPlayViewModel();
     }
 
     // Update is called once per frame
@@ -18,7 +18,7 @@ public class SerchItem : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log(_mainCamera.ScreenToWorldPoint(Input.mousePosition)  + ":" + _mainPlayViewModel.GetSelectedItem());
+            Debug.Log(_mainCamera.ScreenToWorldPoint(Input.mousePosition)  + ":" + viewModel.ViewModel.GetSelectedItem());
         }
     }
 }

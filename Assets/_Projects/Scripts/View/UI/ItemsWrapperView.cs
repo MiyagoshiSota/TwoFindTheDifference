@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -6,6 +7,7 @@ namespace UI
     public class ItemsWrapperView : VisualElement
     {
         public new class UxmlFactory : UxmlFactory<ItemsWrapperView, UxmlTraits> { }
+        public static UQueryBuilder<ItemView> ItemsQuery;
 
         public new class UxmlTraits : VisualElement.UxmlTraits
         {
@@ -40,6 +42,9 @@ namespace UI
             var treeAsset = UnityEditor.AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/_Projects/UI/UIDocuments/ItemsContainer.uxml");
             var container = treeAsset.Instantiate();
             hierarchy.Add(container);
+            
+            var scrollView = container.Q<ScrollView>();
+            ItemsQuery = scrollView.Query<ItemView>();
         }
     }
 }
