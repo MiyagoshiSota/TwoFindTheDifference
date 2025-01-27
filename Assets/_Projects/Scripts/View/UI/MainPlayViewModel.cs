@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.UIElements;
-using Vector2 = System.Numerics.Vector2;
 
 namespace UI
 {

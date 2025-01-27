@@ -18,7 +18,16 @@ public class SerchItem : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log(_mainCamera.ScreenToWorldPoint(Input.mousePosition)  + ":" + viewModel.ViewModel.GetSelectedItem());
+            // アイテムのポジション
+            var itemPosition = viewModel.ViewModel.GetSelectedItem().Position;
+            
+            // ポインターのスクリーンポジション
+            var pointerPosition = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
+            
+            if ((itemPosition.x + 5 > pointerPosition.x && itemPosition.x - 5 < pointerPosition.x) && (itemPosition.y + 5 > pointerPosition.y && itemPosition.y - 5 < pointerPosition.y ))
+            {
+                Debug.Log($"itemPosition: {itemPosition} , pointerPosition: {pointerPosition}");
+            }
         }
     }
 }

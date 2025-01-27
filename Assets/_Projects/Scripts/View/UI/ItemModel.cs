@@ -1,6 +1,4 @@
-using UnityEditor;
 using UnityEngine;
-using Vector2 = System.Numerics.Vector2;
 
 namespace UI
 {
