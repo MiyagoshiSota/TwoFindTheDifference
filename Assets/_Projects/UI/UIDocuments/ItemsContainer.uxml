@@ -1,5 +1,5 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/_Projects/UI/USS/Items.uss?fileID=7433441132597879392&amp;guid=1e2cc42352c1a44aeb30898185c4d0c5&amp;type=3#Items" />
+    <Style src="project://database/Assets/_Projects/UI/USS/ItemsScriptableObject.uss?fileID=7433441132597879392&amp;guid=1e2cc42352c1a44aeb30898185c4d0c5&amp;type=3#ItemsScriptableObject" />
     <engine:VisualElement name="Wrapper" style="background-color: rgba(0, 0, 0, 0.75);">
         <engine:ScrollView mode="Horizontal" enabled="true" horizontal-scroller-visibility="Hidden" scroll-deceleration-rate="1" name="ScrollView" style="flex-direction: row; align-items: center; align-content: auto; justify-content: flex-end; align-self: auto; padding-top: 50px; padding-right: 0; padding-bottom: 50px; padding-left: 0;" />
     </engine:VisualElement>

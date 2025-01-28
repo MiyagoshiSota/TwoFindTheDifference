@@ -18,7 +18,7 @@ namespace UI
 
             foreach (var item in itemsQuery.ToList())
             {
-                var name = item.name;
+                var name = item.Q<Label>("name").text;
                 
                 // positionのキャスト
                 var strPosition = item.Q<Label>("position").text;
@@ -46,7 +46,6 @@ namespace UI
                     _items[i].ItemView.RemoveFromClassList("itemSelected");
                 }
             }
-            Debug.Log(_nowSelect);
         }
         
         public ItemModel GetSelectedItem()

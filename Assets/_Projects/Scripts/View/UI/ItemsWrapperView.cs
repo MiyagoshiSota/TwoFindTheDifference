@@ -11,12 +11,12 @@ namespace UI
 
         public new class UxmlTraits : VisualElement.UxmlTraits
         {
-            private UxmlAssetAttributeDescription<Items> _itemsList = new() {name = "items"};
+            private UxmlAssetAttributeDescription<ItemsScriptableObject> _itemsList = new() {name = "items"};
             
             public override void Init(VisualElement ve, IUxmlAttributes bag, CreationContext cc)
             {
                 base.Init(ve, bag, cc);
-                if (_itemsList.TryGetValueFromBag(bag,cc,out Items item))
+                if (_itemsList.TryGetValueFromBag(bag,cc,out ItemsScriptableObject item))
                 {
                     foreach (var itemInf in item.itemsList)
                     {

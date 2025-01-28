@@ -15,19 +15,37 @@ MonoBehaviour:
   itemsList:
   - itemName: "\u8FB2\u5834\u4E3B"
     itemSprite: {fileID: 256181990, guid: da95bd6d9a52d4aeaa175f4068c6ab89, type: 3}
+    itemPosition: {x: 0, y: 0}
+    itemPrefab: {fileID: 6702337448862713032, guid: 56249c48d8c484f5d8cae12178aca1e6, type: 3}
   - itemName: "\u304A\u3058\u3044\u3061\u3083\u3093"
     itemSprite: {fileID: 1711029200467221979, guid: da95bd6d9a52d4aeaa175f4068c6ab89, type: 3}
+    itemPosition: {x: 114, y: -25}
+    itemPrefab: {fileID: 4228239275733376076, guid: 45206d91786c149928caaf28bf903599, type: 3}
   - itemName: "\u8CAF\u6C34\u69FD"
     itemSprite: {fileID: -1944886122, guid: 5c6246b4b061b4b78b9aa38cdd7a5505, type: 3}
+    itemPosition: {x: 0, y: 0}
+    itemPrefab: {fileID: 0}
   - itemName: "\u6C34\u8ECA"
     itemSprite: {fileID: 426430724, guid: 5c6246b4b061b4b78b9aa38cdd7a5505, type: 3}
+    itemPosition: {x: 0, y: 0}
+    itemPrefab: {fileID: 0}
   - itemName: "\u30A2\u30D2\u30EB"
     itemSprite: {fileID: -9141340059405266105, guid: d16f39ce445b64064b6eda46abe65862, type: 3}
+    itemPosition: {x: 0, y: 0}
+    itemPrefab: {fileID: 0}
   - itemName: "\u30B3\u30C3\u30AF"
     itemSprite: {fileID: -1881454354, guid: da95bd6d9a52d4aeaa175f4068c6ab89, type: 3}
+    itemPosition: {x: 0, y: 0}
+    itemPrefab: {fileID: 0}
   - itemName: "\u30A4\u30CC"
     itemSprite: {fileID: -2766254576557096296, guid: d16f39ce445b64064b6eda46abe65862, type: 3}
+    itemPosition: {x: 0, y: 0}
+    itemPrefab: {fileID: 0}
   - itemName: "\u304A\u3070\u3055\u3093"
     itemSprite: {fileID: 1526086748, guid: da95bd6d9a52d4aeaa175f4068c6ab89, type: 3}
+    itemPosition: {x: 0, y: 0}
+    itemPrefab: {fileID: 0}
   - itemName: "\u72AC\u5C0F\u5C4B(\u8D64)"
     itemSprite: {fileID: 1889683112, guid: 5c6246b4b061b4b78b9aa38cdd7a5505, type: 3}
+    itemPosition: {x: 0, y: 0}
+    itemPrefab: {fileID: 0}
